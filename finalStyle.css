@@ -1,0 +1,302 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif !important;
+  text-decoration: none;
+}
+:root {
+  --white-color: #ffffff;
+  --orange-color: #ff4820;
+  --hover-color: #e0421a;
+  --yellow-color: #ff6f00;
+  --blue-color: #81afdd;
+  --trans-3: 0.3s;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--orange-color);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #3e567aa2;
+}
+/* Global Classes */
+.gutter-reset {
+  --bs-gutter-x: 0;
+}
+a {
+  text-decoration: none;
+  transition: var(--trans-3);
+}
+a:not(.active) {
+  color: var(--white-color);
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+button:focus,
+input:focus {
+  outline: 2px solid var(--orange-color);
+  outline-offset: 2px;
+}
+.section-pd {
+  padding: 60px 0;
+}
+.colored-text {
+  font-weight: bolder;
+  background: linear-gradient(to right, #ae67fa, #f49867);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.colored-bg {
+  background: linear-gradient(to right, #ae67fa, #f49867);
+}
+.bg-color {
+  background-color: #040c18;
+}
+.text-color {
+  color: var(--blue-color);
+}
+.white-blue {
+  background-color: #042c54;
+}
+.light-orange {
+  color: var(--hover-color) !important;
+}
+a.light-orange:hover {
+  color: var(--hover-color) !important;
+}
+.light-green {
+  color: #71e5ff !important;
+}
+a.light-green:hover {
+  color: #10d368 !important;
+}
+.heading-bar::before {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: -15px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #ae67fa, #f49867);
+}
+.opacity-light {
+  opacity: 0.7;
+  transition: var(--trans-3);
+}
+.opacity-light:hover {
+  opacity: 1;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+
+/* Header */
+#header {
+  transition: 0.3s 0.3s;
+}
+#header.active,
+#header.scroll-bg {
+  transition-delay: 0s;
+  background-color: #414b58b9;
+  color: var(--white-color);
+  backdrop-filter: blur(12px);
+}
+#header .register button:last-of-type {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+#header .register button {
+  transition: var(--trans-3);
+}
+#header .register button:hover {
+  border: 2px solid var(--hover-color) !important;
+}
+#header .navbar-brand {
+  width: 70px;
+}
+#header .navbar-toggler {
+  box-shadow: none;
+  border: none;
+}
+#header .nav-link.active,
+#header .nav-link:hover {
+  color: var(--hover-color) !important;
+}
+#header.active .fa-xmark {
+  color: var(--orange-color) !important;
+  font-size: 2.6rem !important;
+}
+
+/* Landing Section */
+#landing {
+  padding: 150px 0 60px;
+  background-color: var(--bg-color);
+}
+#landing .container {
+  row-gap: 80px;
+}
+#landing main h1 {
+  font-size: 3rem;
+}
+#landing main p {
+  color: var(--blue-color);
+}
+#landing form,
+#landing img {
+  max-width: 550px;
+}
+#landing form button {
+  background-color: var(--orange-color);
+  transition: var(--trans-3);
+}
+#landing form button:hover {
+  background-color: var(--hover-color);
+}
+#user-email {
+  background: transparent;
+  border: transparent;
+  background-color: #052d56;
+  color: #3d6184;
+  font-size: 20px;
+}
+#user-email::placeholder {
+  color: #3d6184;
+}
+
+/* Media Queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .font-lg-text {
+    font-size: 1.1rem;
+  }
+  #header .navbar-nav {
+    font-size: 1.1rem !important;
+  }
+  #header .register button:first-of-type {
+    background-color: transparent;
+    color: var(--white-color);
+  }
+  #header .nav-link.active,
+  #header .nav-link:hover {
+    color: var(--orange-color) !important;
+    transform: scale(1.05);
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .register button {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  nav .navbar-nav {
+    font-size: 1.3rem !important;
+  }
+}
+/* Signup section styles */
+.Signup {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 32px;
+}
+
+.Signup .PeopleRequested {
+  width: 581.92px;
+  height: 37.61px;
+  left: 195.37px;
+
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  font-family: Manrope;
+  font-weight: 500;
+  line-height: 37.61px;
+  word-wrap: break-word;
+}
+
+.Signup .Group1 {
+  width: 181.79px;
+  height: 38px;
+  left: 0px;
+
+  position: absolute;
+}
+
+.Signup .Group1 .Ellipse1,
+.Signup .Group1 .Ellipse2,
+.Signup .Group1 .Ellipse3,
+.Signup .Group1 .Ellipse4,
+.Signup .Group1 .Ellipse5,
+.Signup .Group1 .Ellipse6,
+.Signup .Group1 .Ellipse7 {
+  width: 36px;
+  height: 36px;
+  top: 0.72px;
+  position: absolute;
+  border-radius: 9999px;
+  border: 2.09px white solid;
+}
+
+.Signup .Group1 .Ellipse1 {
+  left: 0px;
+}
+
+.Signup .Group1 .Ellipse2 {
+  left: 24.3px;
+}
+
+.Signup .Group1 .Ellipse3 {
+  left: 48.6px;
+}
+
+.Signup .Group1 .Ellipse4 {
+  left: 72.89px;
+}
+
+.Signup .Group1 .Ellipse5 {
+  left: 97.19px;
+}
+
+.Signup .Group1 .Ellipse6 {
+  left: 121.49px;
+}
+
+.Signup .Group1 .Ellipse7 {
+  left: 145.79px;
+  background: #13ded2;
+}
+
+.Signup .Group1 .subs {
+  left: 154.37px;
+  top: 0px;
+  position: absolute;
+  color: black;
+  background-color: transparent;
+  font-size: 8px;
+  font-family: Manrope;
+  font-weight: 800;
+  line-height: 37.61px;
+  word-wrap: break-word;
+}
